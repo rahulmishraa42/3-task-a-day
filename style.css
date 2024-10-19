@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background: #FFFFFF;
+}
+.container{
+    max-width: 660px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+}
+.container h1{
+    font-size: 4em;
+    color: orange;
+    margin: 36px 0;
+    text-align: center;
+}
+h1 span{
+    color: green;
+}
+.container .goalContainer{
+    /* border: 1px solid black; */
+    background: #FBFBFB;
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+}
+.goalContainer .header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 46px;
+}
+.sun{
+    position: relative;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sunLeftEye{
+    position: absolute;
+    margin-right: 8px;
+    margin-top: -8px;
+    z-index: 100;
+}
+.sunRightEye{
+    position: absolute;
+    margin-left: 8px;
+    margin-top: -8px;
+    z-index: 100;
+}
+.sunMouth{
+    position: absolute;
+    margin-top: 5px;
+    z-index: 100;
+}
+.header p{
+    font-size: 2em;
+    font-weight: 700;
+}
+.progressMessage{
+    color: #858585;
+}
+.progressbarContainer{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    background-color: #48A3001A;
+    margin: 18px 0;
+}
+.progressbarContainer .progressbar{
+    background-color: #48A300;
+    width:0;
+    border-radius: 15px;
+    height: 100%;
+    transition: 0.7s;
+}
+.taskDetails{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    font-weight: 500;
+}
+.task{
+    width: 100%;
+    height: 82px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 46px;
+    border: 1px solid #0000001A
+}
+.task .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #61481C4D;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left:22px;
+    border: 2px solid #61481C4D;
+}
+.task input{
+    flex: 1;
+    height: 100%;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.taskProgressionMessage{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 66px;
+}
+.madeBy{
+    text-align: center;
+}
+.complete{
+    border: 2px solid green;
+}
+.complete .checkbox{
+    border: 2px solid green;
+    color: green;
+}
+.complete input{
+    color: green;
+    text-decoration: line-through;
+}
+
+.errorTask{
+    position: fixed;
+    padding: 50px;
+    width: 300px;
+    font-weight: 600;
+    background: #FBFBFB;
+    border-radius: 15px;
+    border: 2px solid #61481C4D;
+    margin-bottom: 200px;
+}
+.errorTask .removeBtn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px solid #61481C4D;
+    background: #FFFFFF;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
